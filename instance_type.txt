@@ -1,0 +1,4 @@
+c5.12xlarge	3.35
+d3en.12xlarge	3.35
+m6i.8xlarge	2.23
+r7iz.12xlarge	3.35
