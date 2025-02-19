@@ -20,35 +20,9 @@
         "Type": "AmiProduct@1.0"
       },
       "DetailsDocument": [
-	{"Key": "u-24tb1.metal","Name": "u-24tb1.metal","Description": "u-24tb1.metal","Unit": "Hrs","Types": ["Metered"]},
-{"Key": "c7i.large","Name": "c7i.large","Description": "c7i.large","Unit": "Hrs","Types": ["Metered"]},
-{"Key": "c5ad.xlarge","Name": "c5ad.xlarge","Description": "c5ad.xlarge","Unit": "Hrs","Types": ["Metered"]},
-{"Key": "cc2.8xlarge","Name": "cc2.8xlarge","Description": "cc2.8xlarge","Unit": "Hrs","Types": ["Metered"]},
-{"Key": "i2.xlarge","Name": "i2.xlarge","Description": "i2.xlarge","Unit": "Hrs","Types": ["Metered"]},
-{"Key": "m5d.12xlarge","Name": "m5d.12xlarge","Description": "m5d.12xlarge","Unit": "Hrs","Types": ["Metered"]},
-{"Key": "r6in.12xlarge","Name": "r6in.12xlarge","Description": "r6in.12xlarge","Unit": "Hrs","Types": ["Metered"]},
-{"Key": "m4.4xlarge","Name": "m4.4xlarge","Description": "m4.4xlarge","Unit": "Hrs","Types": ["Metered"]},
-{"Key": "c6a.metal","Name": "c6a.metal","Description": "c6a.metal","Unit": "Hrs","Types": ["Metered"]},
-{"Key": "m6idn.2xlarge","Name": "m6idn.2xlarge","Description": "m6idn.2xlarge","Unit": "Hrs","Types": ["Metered"]},
-{"Key": "t3a.xlarge","Name": "t3a.xlarge","Description": "t3a.xlarge","Unit": "Hrs","Types": ["Metered"]},
-{"Key": "c6a.24xlarge","Name": "c6a.24xlarge","Description": "c6a.24xlarge","Unit": "Hrs","Types": ["Metered"]},
-{"Key": "r7i.12xlarge","Name": "r7i.12xlarge","Description": "r7i.12xlarge","Unit": "Hrs","Types": ["Metered"]},
-{"Key": "r5.xlarge","Name": "r5.xlarge","Description": "r5.xlarge","Unit": "Hrs","Types": ["Metered"]},
-{"Key": "c4.4xlarge","Name": "c4.4xlarge","Description": "c4.4xlarge","Unit": "Hrs","Types": ["Metered"]},
-{"Key": "c6id.12xlarge","Name": "c6id.12xlarge","Description": "c6id.12xlarge","Unit": "Hrs","Types": ["Metered"]},
-{"Key": "c5n.2xlarge","Name": "c5n.2xlarge","Description": "c5n.2xlarge","Unit": "Hrs","Types": ["Metered"]},
-{"Key": "m6i.24xlarge","Name": "m6i.24xlarge","Description": "m6i.24xlarge","Unit": "Hrs","Types": ["Metered"]},
-{"Key": "r5ad.xlarge","Name": "r5ad.xlarge","Description": "r5ad.xlarge","Unit": "Hrs","Types": ["Metered"]},
-{"Key": "c6in.12xlarge","Name": "c6in.12xlarge","Description": "c6in.12xlarge","Unit": "Hrs","Types": ["Metered"]},
-{"Key": "i4i.2xlarge","Name": "i4i.2xlarge","Description": "i4i.2xlarge","Unit": "Hrs","Types": ["Metered"]},
-{"Key": "g5.16xlarge","Name": "g5.16xlarge","Description": "g5.16xlarge","Unit": "Hrs","Types": ["Metered"]},
-{"Key": "m7i-flex.4xlarge","Name": "m7i-flex.4xlarge","Description": "m7i-flex.4xlarge","Unit": "Hrs","Types": ["Metered"]},
-{"Key": "r6id.12xlarge","Name": "r6id.12xlarge","Description": "r6id.12xlarge","Unit": "Hrs","Types": ["Metered"]},
-{"Key": "r5b.xlarge","Name": "r5b.xlarge","Description": "r5b.xlarge","Unit": "Hrs","Types": ["Metered"]},
-{"Key": "c5.12xlarge","Name": "c5.12xlarge","Description": "c5.12xlarge","Unit": "Hrs","Types": ["Metered"]},
-{"Key": "d3en.12xlarge","Name": "d3en.12xlarge","Description": "d3en.12xlarge","Unit": "Hrs","Types": ["Metered"]},
-{"Key": "m6i.8xlarge","Name": "m6i.8xlarge","Description": "m6i.8xlarge","Unit": "Hrs","Types": ["Metered"]},
-{"Key": "r7iz.12xlarge","Name": "r7iz.12xlarge","Description": "r7iz.12xlarge","Unit": "Hrs","Types": ["Metered"]}
+	{"Key": "r5n.2xlarge","Name": "r5n.2xlarge","Description": "r5n.2xlarge","Unit": "Hrs","Types": ["Metered"]},
+	{"Key": "m6id.4xlarge","Name": "m6id.4xlarge","Description": "m6id.4xlarge","Unit": "Hrs","Types": ["Metered"]},
+	{"Key": "x2idn.16xlarge","Name": "x2idn.16xlarge","Description": "x2idn.16xlarge","Unit": "Hrs","Types": ["Metered"]}
       ]
     },
     {
@@ -142,7 +116,10 @@
 {"DimensionKey": "c5.12xlarge","Price": "3.35"},
 {"DimensionKey": "d3en.12xlarge","Price": "3.35"},
 {"DimensionKey": "m6i.8xlarge","Price": "2.23"},
-{"DimensionKey": "r7iz.12xlarge","Price": "3.35"}
+{"DimensionKey": "r7iz.12xlarge","Price": "3.35"},
+{"DimensionKey": "r5n.2xlarge","Price": "0.55"},
+{"DimensionKey": "m6id.4xlarge","Price": "1.11"},
+{"DimensionKey": "x2idn.16xlarge","Price": "4.47"}
                 ]
               }
             ]
