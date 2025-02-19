@@ -100,8 +100,6 @@ m6id.4xlarge   1.11
 x2idn.16xlarge 4.47
 ```
 
-Below is the corrected version with improved grammar:
-
 ---
 
 ### 9. Update the File `add_type.txt`
