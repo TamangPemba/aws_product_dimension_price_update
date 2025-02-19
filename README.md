@@ -91,7 +91,8 @@ xlsx2csv product_offer_ids.xlsx
 
 ### 8. Create a New File for Instance Types
 
-Create a file named `instance_type.txt` and copy the instance types along with their corresponding prices into it. For example:
+Create a file named `instance_type.txt` and copy the instance types along with their corresponding prices into it. This will used for to add new dimensions.
+For example:
 
 ```
 r5n.2xlarge    0.55
@@ -99,7 +100,38 @@ m6id.4xlarge   1.11
 x2idn.16xlarge 4.47
 ```
 
-### 9. Generating the Dimension and RateCard
+Below is the corrected version with improved grammar:
+
+---
+
+### 9. Update the File `add_type.txt`
+
+Paste the instance types that you want to add into `add_type.txt`. For example:
+
+```bash
+m3.xlarge
+c6a.large
+c6a.16xlarge
+c6id.8xlarge
+m5dn.2xlarge
+c7i.48xlarge
+hs1.8xlarge
+m6in.12xlarge
+```
+
+Then, execute the `add_type.py` script:
+
+```bash
+python3 add_type.py
+```
+
+This will generate a new file called `type.json`. Copy the contents of that file and update the `changeset.json` file accordingly. For example:
+
+```bash
+"DetailsDocument": {"InstanceTypes": ["m3.xlarge", "c6a.large", "c6a.16xlarge", "c6id.8xlarge", "m5dn.2xlarge", "c7i.48xlarge", "hs1.8xlarge", "m6in.12xlarge"]},
+```
+
+### 10. Generating the Dimension and RateCard
 
 Run the following command to generate the dimension and RateCard JSON using the `update.py` script:
 
@@ -124,7 +156,7 @@ You should see output similar to:
 }
 ```
 
-### 10. Updating `changeset.json` for Dimensions
+### 11. Updating `changeset.json` for Dimensions
 
 Open the `changeset.json` file and update the `DetailsDocument` section with the new dimensions. For example:
 
@@ -138,7 +170,7 @@ Open the `changeset.json` file and update the `DetailsDocument` section with the
 
 **Note:** You must update this each time you add a new instance type. If an instance type is already present, the script will generate an error.
 
-### 11. Updating the RateCard
+### 12. Updating the RateCard
 
 Update the `RateCard` section in `changeset.json`. When updating the RateCard, add a comma (`,`) after the previous last entry and paste your new RateCard entries below. You must include RateCards for all existing instance types.
 

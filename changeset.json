@@ -7,12 +7,7 @@
         "Identifier": "prod-2cchdly6d655c",
         "Type": "AmiProduct@1.0"
       },
-      "DetailsDocument": {
-        "InstanceTypes": [
-          "c4.8xlarge"
-        ]
-      }
-    },
+      "DetailsDocument": {"InstanceTypes": ["m3.xlarge","c6a.large","c6a.16xlarge","c6id.8xlarge","m5dn.2xlarge","c7i.48xlarge","hs1.8xlarge","m6in.12xlarge"]}},
     {
       "ChangeType": "AddDimensions",
       "Entity": {
