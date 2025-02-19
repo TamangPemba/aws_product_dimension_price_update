@@ -23,6 +23,7 @@ Clone the AWS Marketplace reference code repository:
 ```bash
 git clone https://github.com/aws-samples/aws-marketplace-reference-code.git
 ```
+Below is the revised section with the added documentation links:
 
 ### 2. Follow the Documentation for Python
 
@@ -32,11 +33,14 @@ Change directory to the Python section:
 cd aws-marketplace-reference-code/python
 ```
 
-Install all necessary dependencies as mentioned in the documentation, and then navigate to the following directory to add dimensions:
+Install all necessary dependencies as mentioned in the [Python Documentation](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/python). Then navigate to the following directory to add dimensions:
 
 ```bash
 cd src/catalog_api/products/ami/add_dimension_to_ami_product_and_set_price_in_public_offer
 ```
+
+For more details on working with single AMI products, please refer to the [AWS Marketplace API Documentation](https://docs.aws.amazon.com/marketplace/latest/APIReference/work-with-single-ami-products.html).
+
 
 ### 3. Extracting Product and Offer IDs
 
