@@ -42,15 +42,7 @@ cd src/catalog_api/products/ami/add_dimension_to_ami_product_and_set_price_in_pu
 For more details on working with single AMI products, please refer to the [AWS Marketplace API Documentation](https://docs.aws.amazon.com/marketplace/latest/APIReference/work-with-single-ami-products.html).
 
 
-### 3. Extracting Product and Offer IDs
-
-Run the following command to extract the Product and Offer IDs from the AWS Marketplace Catalog API. The output is stored in a file named `product.json`.
-
-```bash
-aws marketplace-catalog list-entities --catalog AWSMarketplace --entity-type Offer > product.json
-```
-
-### 4. Clone the New Repository
+### 3. Clone the New Repository
 
 Clone your new repository:
 
@@ -59,12 +51,19 @@ git clone https://github.com/TamangPemba/aws_product_dimension_price_update.git
 cd aws_product_dimension_price_update
 ```
 
-### 5. Install the Necessary Python Libraries
+### 4. Install the Necessary Python Libraries
 
 Install the required Python packages using the provided `requirements.txt`:
 
 ```bash
 pip install -r requirements.txt
+```
+### 5. Extracting Product and Offer IDs
+
+Run the following command to extract the Product and Offer IDs from the AWS Marketplace Catalog API. The output is stored in a file named `product.json`.
+
+```bash
+aws marketplace-catalog list-entities --catalog AWSMarketplace --entity-type Offer > product.json
 ```
 
 ### 6. Converting `product.json` to an Excel File
@@ -82,8 +81,6 @@ python3 offer_prod_id.py
 ```
 
 ### 7. Viewing the Excel File from the Command Line
-
-If you prefer to view the Excel file from the command line, convert it to CSV format and display it using `less`:
 
 ```bash
 xlsx2csv product_offer_ids.xlsx
