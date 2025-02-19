@@ -1,7 +1,3 @@
-
-```bash
-# AWS Marketplace Product and Offer ID Extraction
-
 This repository contains scripts and instructions to extract Product and Offer IDs from the AWS Marketplace Catalog API and convert them into a simplified Excel file.
 
 ## Overview
@@ -15,20 +11,24 @@ When updating the instance type and pricing using the AWS Marketplace Catalog AP
 
 - **AWS CLI**: Installed and configured with appropriate credentials.
 - **Python 3.x**: Installed on your system.
-- **Required Python Packages**: Listed in `requirements.txt`:
-  - `pandas`
-  - `openpyxl`
-  - `xlsx2csv`
 
-Install the required packages by running:
-
-```bash
-pip install -r requirements.txt
-```
 
 ## Steps
+### 1. Clone the original AWS repository
+```bash
+git clone https://github.com/aws-samples/aws-marketplace-reference-code/tree/main
+```
 
-### 1. Extracting Product and Offer IDs
+### 2. Follow the documentation for python
+```bash 
+cd python
+```
+Install all the necessary things as mentioned in the documentation. and navigate to the following directory for to add dimenions. 
+```bash
+cd  /aws-marketplace-reference-code/python/src/catalog_api/products/ami/add_dimension_to_ami_product_and_set_price_in_public_offer
+```
+
+### 3. Extracting Product and Offer IDs
 
 Run the following command to extract the Product and Offer IDs from the AWS Marketplace Catalog API. The output is stored in a file named `product.json`.
 
@@ -36,7 +36,17 @@ Run the following command to extract the Product and Offer IDs from the AWS Mark
 aws marketplace-catalog list-entities --catalog AWSMarketplace --entity-type Offer > product.json
 ```
 
-### 2. Converting product.json to an Excel File
+### 4. Clone the new repository 
+```bash 
+git clone https://github.com/TamangPemba/aws_product_dimension_price_update.git
+```
+
+### 5. Install the necessary python Libraries. 
+```bash
+pip install -r requirements.txt
+```
+
+### 6. Converting product.json to an Excel File
 
 Use the provided Python script `offer_prod_id.py` to convert `product.json` into an Excel file containing only the Product ID and Offer ID. The script performs the following actions:
 
@@ -50,12 +60,12 @@ To run the script, execute:
 python3 offer_prod_id.py
 ```
 
-### 3. Viewing the Excel File from the Command Line
+### 7. Viewing the Excel File from the Command Line
 
 If you prefer to view the Excel file from the command line, you can convert it to CSV format and then use `less` to browse the file:
 
 ```bash
-xlsx2csv product_offer_ids.xlsx | less
+xlsx2csv product_offer_ids.xlsx
 ```
 
 ## Repository Structure
